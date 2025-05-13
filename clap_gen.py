@@ -40,6 +40,7 @@ def process_line(line):
 
 
 if __name__ == "__main__":
+    mp.set_start_method('spawn')
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-c", "--config", type=str, default=config.emo_gen_config.config_path
